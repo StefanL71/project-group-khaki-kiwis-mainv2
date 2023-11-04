@@ -34,9 +34,10 @@
 /* new articles CSS positioning */
 
 #na-styling-div {
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     margin: 0 15% 0 15%;
+    background-color: rgb(172, 157, 172);
 
 }
 
@@ -88,9 +89,12 @@ img {
     height: 100px;
     border-style: solid;
     border-width: 2px;
-    border-color: blue;
     margin-left: 20px;
     padding-bottom: 40px;
+}
+.ql-toolbar.ql-snow {
+    background-color: rgb(197, 187, 198);
+border-radius: 5px;
 }
 
 .form-group-upload {
