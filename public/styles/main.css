@@ -1,0 +1,11 @@
+/* Fonts, FontAwesome */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.cdnfonts.com/css/federo');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/* CSS files */
+@import url('site.css');
+@import url('utils.css');
+@import url('carousel.css');
+@import url('global.css');
+

@@ -1,0 +1,139 @@
+/* line to help ID what is happening on the page */
+/* #new-article {
+    border: 1px black;
+} */
+
+/* Responsive CSS styling (for smaller screens) */
+/* responsive is not working arrrgh */
+@media screen and (max-width: 800px) {
+    .card {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+
+        .card-body {
+            grid-row: auto;
+            grid-template-areas:
+                "header"
+                "col1"
+                "col2"
+                "footer"
+        }
+    }
+}
+
+
+
+/* new articles CSS positioning */
+
+
+
+
+/* new articles CSS positioning */
+
+#new-article {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 0, 100px, 0, 100px;
+}
+
+#new-article-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header header"
+        "col1 col2"
+        "footer footer"
+}
+
+h2 {
+    grid-area: header;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.blog-key-image {
+    grid-area: col1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-group {
+    grid-area: col2;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+
+.editor-layout {
+    width: 80%;
+    height: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+
+.form-group-upload {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* @media screen and (max-width: 800px) {
+    #new-article .card-body {
+        grid-row: auto;
+        grid-template-areas:
+            "header"
+            "col1"
+            "col2"
+            "footer"
+    }
+     }
+
+     /* new articles CSS positioning */
+/* #new-article .card-article {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header header"
+        "col1 col2"
+        "footer footer"
+}
+
+.blog-key-image {
+    grid-area: col1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-group {
+    grid-area: col2;
+}
+
+.form-group-upload {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+} */

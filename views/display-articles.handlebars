@@ -1,0 +1,18 @@
+<section class="container">
+    <div class="sub-container">
+        {{!-- insert the favorite article selected
+        Rob i was unsure of names of the image, image caption, article title, and text area so i have plugged some names
+        in the handlebar request. You will need to align this obviously when doing the server side code. thanks--}}
+        <h1>{{title}}</h1>
+        <div> class="swiper-container">
+            {{#if article}}
+            {{#with favouritearticle}}
+            <img src="{{this.imageUrl}}" />
+            <h1><span></span>{{this.Image-Caption-label}}</h1>
+            <h2><span>{{this.title}}</span></h2>
+            <p>{{this.text}}</p>
+            {{/with}}
+            {{/if}}
+        </div>
+
+</section>

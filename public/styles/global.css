@@ -1,0 +1,62 @@
+/* CSS for multiple pages (e.g HTML element selectors */
+body {
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+    background-color: #faf1f0;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 40%;
+}
+
+#home-sub-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+    z-index: 0;
+    }
+
+/*headings and text*/
+h1,
+h2
+a
+{
+    text-decoration: none;
+    font-family: 'Federo', sans-serif;
+    color: #081139 ;
+    grid-area: header;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+.container .sub-container h1{
+    padding-bottom: 1%;
+}
+

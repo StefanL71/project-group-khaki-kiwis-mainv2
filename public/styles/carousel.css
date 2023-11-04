@@ -1,0 +1,45 @@
+.swiper-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.swiper-wrapper{
+  width: 60%;
+  overflow: wrap;
+  }
+
+.swiper-pagination-bullets{
+  display: relative;
+  top: 42.5%;
+}
+
+.swiper-button-prev{
+  transform: translateY(-420%);
+  left: 7.5rem!important;
+}
+
+.swiper-button-next{
+  transform: translateY(-420%);
+  right: 7.5rem!important;
+}
+
+.swiper-wrapper .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 0.5% 0%;
+  border: 1px solid gray;
+  background-color:white;
+  opacity: 0.9;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+

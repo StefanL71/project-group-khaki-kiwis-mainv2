@@ -1,0 +1,28 @@
+<nav>
+  <div class="left-nav">
+    <a href="/">LOCAL HOTSPOTS</a>
+  </div>
+  <div class="right-nav">
+    <!-- Log In -->
+      <i id="login-icon" class="fa-solid fa-user"></i>
+
+    <div id="login-container">
+      <form class="login-form" action="./login" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+
+    <!-- Refresh -->
+      <button onclick="refreshPage();"><i class="fa-solid fa-gear"></i></button>
+
+    <!-- Sign Out -->
+    <form action="./user/log-out" method="POST">
+      <button><i class="fa-solid fa-sign-out"></i></button>
+    </form>
+
+  </div> 
+  </div> 
+ </div> 
+</nav>
+

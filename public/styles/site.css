@@ -1,0 +1,192 @@
+/*  Base CSS styling */
+/* Navbar styling*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height: 10%;
+  padding: 1% 0%;
+}
+
+  .left-nav {
+    flex:1;
+  }
+  
+  .right-nav{
+    display: flex;
+  }
+
+  .fa-solid{
+    gap: 20px;
+    cursor: pointer;
+  }
+
+/*buttons*/
+.submit-button {
+  color:#F8F8FA;
+  background-color: #081139;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 2 rem;
+  font-family: 'Oswald', sans-serif; 
+}
+
+.submit-button:hover, .fa-sign-out:hover, .fa-gear:hover, .fa-user:hover{
+  background-color: #B2BFDD;
+}
+
+.right-nav i {
+  margin-right: 30px; /* Adjust the value to control the spacing between icons */
+}
+
+  #login-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-form {
+    display: none;
+    width:15rem;
+    position: absolute;
+    right: 9rem;
+    padding: 20px;
+    margin-top: 24px;
+    background: #ddd;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow: 0 4px 0 darken(#ddd, 5%);
+
+  input {
+      z-index: 1;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 0;
+      outline: 0;
+      background: #f1f1f1;
+      font-weight: 200;
+      font-family: 'Oswald', sans-serif; 
+      font-style: italic;
+      border-radius: 2px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform:translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .open {
+    animation: slide 1s;
+    display: block;
+  }
+  
+  
+  .left-nav a{
+    text-decoration: none;
+    font-family: 'Federo';
+    font-size: 30pt;
+    font-weight: bold;
+    color: #081139;
+  }
+
+  #login-container button{
+      border: 0px white !important;
+      outline: none; 
+      font-size:0 !important;
+      padding: 0;
+      background: none;
+  }
+
+  .fa-sign-out, .fa-gear, .fa-user{
+    color: #081139;
+    font-size: 24px;
+  }
+
+  /*likecounter*/
+  
+  .like-counter {
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px;
+    }
+
+    .like{
+      color: #FF7C30;
+    }
+  
+  .liked {
+    font-weight: bold;
+  }
+  .click-text{
+    font-size: 1rem;
+    font-family: 'Federo';
+  }
+  .fa-heart{
+    color:red;
+  }
+
+/* Footer */
+footer {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0%;
+    text-align: center;
+}
+
+footer .icons-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0% 2% 0.25% 0%;
+}
+
+footer .icons-container a {
+    color: black;
+    font-size: 2rem;
+    padding: 0% 2%;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-instagram{
+    color: #ed8975;
+}
+
+.fa-tiktok{
+    color: black;
+}
+
+.fa-phone{
+    color: green;
+}
+
+.fa-envelope{
+    color: red;
+}
+
+footer i:hover {
+    color: gold;
+}
+
+footer p {
+    font-size: 1rem;
+}

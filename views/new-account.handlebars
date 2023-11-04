@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="sub-container">
+        <h1>{{title}}</h1>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div id="swiper" class="swiper-wrapper">
+                <!-- Slides -->
+                {{#each avatarUrlList}}
+                <div class="swiper-slide card">
+                    <img src="{{this}}">
+                </div>
+                {{/each}}
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        {{!-- user-description// --}}
+    </div>
+
+    <div class="sub-container">
+        <p>Please fill in this form to create an account.</p>
+        <form action="./new-account" method="POST">
+
+            <div class="form-group">
+             {{#if userData}}
+                    <label for="usernameInput">Username:</label>
+                    <input disabled id="usernameInput" type="text" name="username" value={{userData.username}}><br>
+  
+                    <label for="fNameInput">First Name:</label>
+                    <input id="fNameInput" type="text" name="fName" value={{userData.fname}}><br>
+  
+                    <label for="lNameInput">Last Name:</label>
+                    <input id="lNameInput" type="text" name="lName" value={{userData.lname}}><br>
+  
+                    <label for="dobInput">Date of Birth:</label>
+                    <input id="dobInput" type="date" name="dateOfBirth" value={{userData.dateOfBirth}}><br>
+
+                    <label for="descInput">Description:</label>
+                    <textarea id="descInput" name="description">{{userData.description}}</textarea>
+                    {{else}}
+
+                    <label for="usernameInput">Username:</label>
+                    <input id="usernameInput" type="text" name="username"><br>
+  
+                    <label for="fNameInput">First Name:</label>
+                    <input id="fNameInput" type="text" name="fName"><br>
+  
+                    <label for="lNameInput">Last Name:</label>
+                    <input id="lNameInput" type="text" name="lName"><br>
+  
+                    <label for="dobInput">Date of Birth:</label>
+                    <input id="dobInput" type="date" name="dateOfBirth"><br>
+
+                    <label for="descInput">Description:</label>
+                    <textarea id="descInput" name="description"></textarea>
+                    {{/if}}
+                </div>
+
+                <label for="passwordInput">Password:</label>
+                <input id="passwordInput" type="password" name="password"><br>
+
+                <label for="txtPassword">Confirm Password:</label>
+                <input type="password" name="password" id="confirmPassword" required>
+
+            <div class="flex-row justify-sb align-center">
+                <button id="submit-button" class="submit-button" type="submit" onclick="checkPassword ()">{{newAccountButtonText}}</button>
+            </div>
+        </form>
+    </div>
+
+</div>

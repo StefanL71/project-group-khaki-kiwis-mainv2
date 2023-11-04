@@ -1,0 +1,38 @@
+<section class="container">
+ <div id="home-sub-container" class="sub-container">
+        <h1>{{title}}</h1>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div id="swiper" class="swiper-wrapper">
+                <!-- Slides -->
+                {{#each placeHolderList}}
+                <div class="swiper-slide card">
+                                  <img id="image{{@index}}" src="{{this}}">
+                    <div class="likes">
+                        <span class="like-counter" data-image-index="{{@index}}" style="font-size: 3em;">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="click-text" id="clicks{{@index}}">0</span>
+                        </span>
+                    </div>
+                </div>
+             
+                {{/each}}
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        {{!-- user-description// --}}
+    </div>
+
+
+    <a href="#" class="like-counter">Like</a><span class="click-text"><a id="clicks"></span>
+    
+
+</section>
